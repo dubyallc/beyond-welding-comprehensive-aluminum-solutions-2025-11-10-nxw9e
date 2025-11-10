@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beyond Welding: Comprehensive Aluminum Solutions - Material Sourcing, Post-Weld Treatment, and Quality Assurance">
+    <meta name="keywords" content="aluminum, welding, solutions, material sourcing, quality assurance">
+    <meta name="author" content="Duby LLC">
+    <title>Beyond Welding: Comprehensive Aluminum Solutions | Duby LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-light {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .smooth-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-hover {
+            @apply hover:scale-105 hover:shadow-lg smooth-transition;
+        }
+        
+        .card-hover {
+            @apply hover:scale-102 hover:shadow-xl smooth-transition;
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .faq-icon {
+            @apply transition-transform duration-300;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+        }
+        
+        .testimonial-card {
+            @apply bg-white rounded-2xl p-8 shadow-lg smooth-transition hover:shadow-2xl;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                        Duby LLC
+                    </h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium smooth-transition">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium smooth-transition">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium smooth-transition">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 font-medium smooth-transition">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium smooth-transition">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 smooth-transition" aria-label="Toggle menu">
+                        <i class="fas fa-bars text-gray-700 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <a href="#features" class="block py-2 px-4 text-gray-700 hover:text-purple-600 hover:bg-gray-50 rounded-lg smooth-transition">Features</a>
+                <a href="#benefits" class="block py-2 px-4 text-gray-700 hover:text-purple-600 hover:bg-gray-50 rounded-lg smooth-transition">Benefits</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-700 hover:text-purple-600 hover:bg-gray-50 rounded-lg smooth-transition">Testimonials</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-700 hover:text-purple-600 hover:bg-gray-50 rounded-lg smooth-transition">FAQ</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-700 hover:text-purple-600 hover:bg-gray-50 rounded-lg smooth-transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-24 md:py-32 lg:py-40">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-6">
+                Beyond Welding: Comprehensive Aluminum Solutions
+            </h1>
+            <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                More than just welds; we offer complete aluminum solutions that transform your projects from conception to completion. Our end-to-end service encompasses everything you need for superior quality and exceptional results.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://api.leadconnectorhq.com/widget/form/1joHvpGOJwQ91mVnYpAJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-600 font-bold rounded-full button-hover shadow-lg">
+                    Get Started Today
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="#features" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full button-hover hover:bg-white hover:text-purple-600">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Our Comprehensive Services
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    We provide a complete suite of aluminum solutions designed to streamline your workflow and ensure exceptional results at every stage of your project.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Material Sourcing & Selection -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375M12 9.75v.75m0 2.25v.75m0 2.25v.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Material Sourcing & Selection</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We carefully source and select premium aluminum materials from trusted suppliers worldwide. Our expert team evaluates each batch for quality, consistency, and suitability for your specific application requirements. Whether you need standard alloys or specialized compositions, we ensure you receive materials that meet the highest industry standards and exceed your expectations.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Verified supplier network</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Quality certifications included</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-purple-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Competitive pricing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Post-Weld Treatment -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Post-Weld Treatment</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our advanced post-weld treatment processes enhance the structural integrity and longevity of your aluminum welds. We employ state-of-the-art techniques including heat treatment, stress relief, and surface finishing to eliminate residual stresses and improve mechanical properties. Each treatment is precisely calibrated to your material specifications and application demands.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Heat treatment protocols</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Stress relief solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Premium surface finishing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Quality Assurance & Testing -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Quality Assurance & Testing</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Every project undergoes rigorous quality assurance protocols and comprehensive testing procedures. Our certified quality engineers utilize advanced NDT (Non-Destructive Testing) methods, mechanical property evaluations, and dimensional verification to ensure your welds meet or exceed industry standards. We maintain detailed documentation for full traceability and compliance.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Non-destructive testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Industry standard compliance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Complete traceability records</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Why Choose Our Aluminum Solutions
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Experience the transformative benefits of working with industry experts who prioritize your success and deliver measurable results.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Benefit 1: Optimized Performance -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Optimized Performance</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our comprehensive approach ensures your aluminum components perform at peak efficiency. Through meticulous material selection, precision welding techniques, and rigorous post-treatment processes, we maximize structural integrity and mechanical properties. Your projects benefit from enhanced durability, improved load-bearing capacity, and extended service life—delivering superior performance that justifies every investment.
+                    </p>
+                    <div class="space-y-3 w-full">
+                        <div class="flex items-center justify-center">
+                            <span class="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">+40% Durability Improvement</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <span class="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">Extended Service Life</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Reduced Project Complexity -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Reduced Project Complexity</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Simplify your operations by consolidating all aluminum solution needs with a single trusted partner. We handle everything from material procurement through final delivery, eliminating the coordination headaches of managing multiple vendors. Our integrated approach streamlines workflows, reduces communication overhead, and accelerates project timelines. Focus on your core business while we manage the complexity.
+                    </p>
+                    <div class="space-y-3 w-full">
+                        <div class="flex items-center justify-center">
+                            <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">50% Faster Delivery</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">Single Point of Contact</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Guaranteed Satisfaction -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Guaranteed Satisfaction</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We stand behind our work with comprehensive guarantees and unwavering customer support. Our satisfaction guarantee ensures that every project meets your exact specifications and expectations. With dedicated technical support, proactive quality monitoring, and responsive issue resolution, we're committed to your success from start to finish. Your satisfaction is our ultimate measure of success.
+                    </p>
+                    <div class="space-y-3 w-full">
+                        <div class="flex items-center justify-center">
+                            <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold">100% Satisfaction Guarantee</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <span class="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold">24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 md:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=600&fit=crop" alt="Professional aluminum welding and manufacturing" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                        About Duby LLC
+                    </h2>
+                    
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Founded in 2015, Duby LLC emerged from a vision to revolutionize the aluminum fabrication industry. Our founders, with over 50 combined years of welding and materials engineering expertise, recognized a critical gap in the market: the need for a comprehensive, integrated aluminum solutions provider. What started as a small operation with a dedicated team of craftsmen has evolved into a trusted partner for businesses across aerospace, automotive, construction, and industrial sectors. We've grown by staying true to our founding principles: uncompromising quality, customer-centric service, and continuous innovation. Today, we proudly serve hundreds of satisfied clients worldwide, each project a testament to our commitment to excellence.
+                    </p>
+                    
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        At our core, we believe that exceptional aluminum solutions require more than technical expertise—they demand a partnership built on trust, transparency, and mutual success. Our mission is to empower businesses by providing end-to-end aluminum solutions that exceed expectations and drive measurable results. We're committed to environmental sustainability, supporting our communities, and fostering a workplace culture that attracts and retains the industry's finest talent. Our core values—integrity, excellence, innovation, and customer focus—guide every decision we make and every project we undertake. We don't just deliver products; we deliver partnerships that create lasting value.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Real stories from real clients who have experienced the transformative impact of our comprehensive aluminum solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg">JM</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">James Mitchell</h4>
+                            <p class="text-sm text-gray-600">Director of Operations, AeroTech Industries</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Duby LLC transformed our aluminum component production. Their post-weld treatment process improved our product durability by 40%, and their quality assurance is unmatched. We've reduced our supplier count from five to one, saving time and money."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-lg">SL</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Sarah Lee</h4>
+                            <p class="text-sm text-gray-600">Manufacturing Manager, BuildRight Construction</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "The material sourcing service alone is worth the partnership. They consistently deliver premium aluminum alloys with proper certifications, and their attention to detail in quality assurance gives us complete peace of mind."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-lg">RC</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Robert Chen</h4>
+                            <p class="text-sm text-gray-600">Project Lead, Precision Manufacturing Corp</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Working with Duby LLC has been a game-changer. Their integrated approach to aluminum solutions eliminated the complexity of coordinating with multiple vendors. Delivery times improved by 50%, and their customer support is exceptional."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg">MT</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Maria Torres</h4>
+                            <p class="text-sm text-gray-600">Quality Assurance Manager, Global Industries</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                        <i class="fas fa-star star-rating text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Their comprehensive quality assurance protocols and detailed traceability documentation exceed industry standards. We've achieved 100% compliance with all our specifications, and their NDT testing is thorough and reliable. Highly recommended."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Find answers to common questions about our comprehensive aluminum solutions and services.
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg font-bold text-gray-900 text-left">
+                            What aluminum alloys do you specialize in sourcing?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-200 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            We specialize in sourcing a comprehensive range of aluminum alloys including 6061-T6, 7075-T73, 5083-H321, and 2024-T4, among many others. Our network of verified suppliers allows us to access both standard commercial alloys and specialized compositions tailored to your specific application requirements. Whether you need alloys for aerospace, automotive, marine, or industrial applications, we can source materials that meet or exceed your specifications and include proper certifications and documentation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg font-bold text-gray-900 text-left">
+                            What post-weld treatment processes do you offer?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-200 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our post-weld treatment services include heat treatment for strength optimization, stress relief processes to eliminate residual stresses, surface finishing for corrosion resistance and aesthetics, and specialized treatments for specific alloy requirements. Each treatment protocol is precisely calibrated to your material specifications and application demands. Our certified engineers design custom treatment plans that enhance structural integrity, improve mechanical properties, and extend the service life of your aluminum components. We maintain detailed documentation of all treatments for complete traceability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg font-bold text-gray-900 text-left">
+                            How do you ensure quality assurance and compliance?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-200 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Every project undergoes rigorous quality assurance protocols and comprehensive testing procedures. Our certified quality engineers utilize advanced NDT (Non-Destructive Testing) methods including ultrasonic testing, radiography, and dye penetrant inspection. We also perform mechanical property evaluations, dimensional verification, and visual inspections. All testing is conducted in accordance with industry standards such as AWS, ASME, and ISO specifications. We maintain complete documentation for full traceability and compliance verification, ensuring your welds meet or exceed all applicable standards and requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg font-bold text-gray-900 text-left">
+                            What is your typical project turnaround time?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-200 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our integrated approach to aluminum solutions enables us to deliver projects 50% faster than traditional multi-vendor approaches. Typical turnaround times depend on project complexity and specifications, but our streamlined processes and single-point-of-contact coordination significantly accelerate delivery. For standard projects, we can often deliver within 2-3 weeks from material sourcing through final delivery. Expedited services are available for time-critical projects. We'll provide a detailed project timeline and milestones during the planning phase, ensuring you have complete visibility into delivery schedules.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg font-bold text-gray-900 text-left">
+                            Do you offer volume discounts and long-term partnership opportunities?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 border-t border-gray-200 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! We offer competitive volume discounts for high-volume projects and ongoing partnerships. Our tiered pricing structure rewards loyalty and long-term commitments. We work closely with our partners to develop customized solutions that optimize costs while maintaining our quality standards. Whether you need a one-time project or ongoing support, we can structure an arrangement that meets your budget and business objectives. Contact our sales team to discuss volume pricing, partnership opportunities, and how we can create a mutually beneficial long-term relationship.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="relative py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=600&fit=crop" alt="Professional manufacturing facility" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-900 via-purple-800 to-pink-900 opacity-85"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-6">
+                Ready to Transform Your Aluminum Projects?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                Join hundreds of satisfied clients who have experienced the comprehensive benefits of our integrated aluminum solutions. Let's discuss how we can help your business succeed.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://api.leadconnectorhq.com/widget/form/1joHvpGOJwQ91mVnYpAJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-600 font-bold rounded-full button-hover shadow-lg">
+                    Get Your Free Consultation
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="mailto:sam@dubyallc.com" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full button-hover hover:bg-white hover:text-purple-600">
+                    Email Us Directly
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">
+                        <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Duby LLC</span>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Comprehensive aluminum solutions for industries that demand excellence. Material sourcing, precision welding, and quality assurance.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 smooth-transition">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 smooth-transition">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 smooth-transition">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 smooth-transition">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#features" class="text-gray-400 hover:text-purple-400 smooth-transition">Services</a>
+                        </li>
+                        <li>
+                            <a href="#benefits" class="text-gray-400 hover:text-purple-400 smooth-transition">Benefits</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="text-gray-400 hover:text-purple-400 smooth-transition">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="text-gray-400 hover:text-purple-400 smooth-transition">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-purple-400 smooth-transition">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="blog.html" class="text-gray-400 hover:text-purple-400 smooth-transition">Blog</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html" class="text-gray-400 hover:text-purple-400 smooth-transition">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-gray-400 hover:text-purple-400 smooth-transition">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="mailto:sam@dubyallc.com" class="text-gray-400 hover:text-purple-400 smooth-transition">Contact Support</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Get In Touch</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-sm text-gray-500">Email</p>
+                                <a href="mailto:sam@dubyallc.com" class="text-gray-300 hover:text-purple-400 smooth-transition">sam@dubyallc.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-sm text-gray-500">Response Time</p>
+                                <p class="text-gray-300">24/7 Support Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 Duby LLC. All rights reserved. | Comprehensive Aluminum Solutions Provider
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-purple-400 text-sm smooth-transition">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-purple-400 text-sm smooth-transition">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-purple-400 text-sm smooth-transition">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
